@@ -6,11 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.PageBase;
+import pages.HomePage;
 
 public class AddCustomerAndLoginTest extends TestBase {
     Faker faker = new Faker();
-    PageBase pageBase;
+    HomePage homePage;
+
 
     @Test
     public void addCustomerAndLogin() {
@@ -18,17 +19,17 @@ public class AddCustomerAndLoginTest extends TestBase {
         String lastName = faker.internet().uuid();
         String postCode = faker.address().zipCode();
         String expectedFirstAndLastName = firstName + " " + lastName;
-        pageBase = new PageBase(app.driver);
+        homePage = new HomePage(app.driver);
         // Click on Bank Manager Login Button
-        pageBase.click(By.xpath("//*[@ng-click='manager()']"));
+        homePage.clickOnBankManagerLoginButton();
         // Click on Add Customer Button
-        pageBase.click(By.cssSelector("[ng-class='btnClass1']"));
+        click(By.cssSelector("[ng-class='btnClass1']"));
         // Fill Add customer form
         app.driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys(firstName);
         app.driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys(lastName);
         app.driver.findElement(By.xpath("//input[@placeholder='Post Code']")).sendKeys(postCode);
         // Click on Submit Button
-        pageBase.click(By.xpath("//button[@type='submit']"));
+        click(By.xpath("//button[@type='submit']"));
         // Verify Customer is added successfully (take alert text)
         String actualSuccessfullyAlertText = app.driver.switchTo().alert().getText();
         String expectedSuccessfullyAlertText = "Customer added successfully with customer id";
@@ -36,15 +37,15 @@ public class AddCustomerAndLoginTest extends TestBase {
         Assert.assertTrue(actualSuccessfullyAlertText.contains(expectedSuccessfullyAlertText), err);
         app.driver.switchTo().alert().accept();
         // Click on Home button
-        pageBase.click(By.xpath("//*[@ng-click='home()']"));
+        homePage.clickOnHomeButton();
         // Click on Customer Login Button
-        pageBase.click(By.xpath("//button[@ng-click='customer()']"));
+        homePage.clickOnCustomerLoginButton();
         // Choose customer from the dropdown
         WebElement customerDropdown = app.driver.findElement(By.xpath("//*[@ng-model='custId']"));
         Select select = new Select(customerDropdown);
         select.selectByVisibleText(expectedFirstAndLastName);
         // Click on Login Button
-        pageBase.click(By.xpath("//button[@type='submit']"));
+        click(By.xpath("//button[@type='submit']"));
         // Verify correct customer is logged in (take text from the page)
         String firstNameAndLastName = app.driver.findElement(By.xpath("//*[@class='fontBig ng-binding']")).getText();
         err = "Actual first name and last name is not equal expected";
