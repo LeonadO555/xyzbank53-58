@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac796215-7b90-4800-a014-2691c5791e0d" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AddCustomerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BankManagerLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CustomersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/OpenAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CustomerLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/e2e/AddCustomerAndLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/AddCustomerAndLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AddCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AddCustomerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/OpenAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/OpenAccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,18 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/leonid/Documents/xyzbank53-58&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.AddCustomerAndLoginTest.addCustomerAndLogin">
+}</component>
+  <component name="RunManager" selected="TestNG.AddCustomerAndLoginTest.addCustomerWithInValidData">
     <configuration name="AddCustomerAndLoginTest.addCustomerAndLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="xyzBank53-58-1222-e-qa.test" />
       <extension name="coverage">
@@ -72,6 +74,24 @@
       <option name="PACKAGE_NAME" value="e2e" />
       <option name="MAIN_CLASS_NAME" value="e2e.AddCustomerAndLoginTest" />
       <option name="METHOD_NAME" value="addCustomerAndLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCustomerAndLoginTest.addCustomerWithInValidData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="xyzBank53-58-1222-e-qa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.AddCustomerAndLoginTest" />
+      <option name="METHOD_NAME" value="addCustomerWithInValidData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,11 +122,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerWithInValidData" />
       <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerAndLogin" />
       <item itemvalue="TestNG.FirstSeleniumTest.addCustomerAndLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerWithInValidData" />
         <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerAndLogin" />
         <item itemvalue="TestNG.FirstSeleniumTest.addCustomerAndLogin" />
       </list>
