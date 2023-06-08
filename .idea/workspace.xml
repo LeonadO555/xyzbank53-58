@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac796215-7b90-4800-a014-2691c5791e0d" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CustomerLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ac796215-7b90-4800-a014-2691c5791e0d" name="Changes" comment="third commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/AddCustomerAndDeleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/enums/SortDirections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/enums/SortValues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/AddCustomerAndLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/AddCustomerAndLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AddCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AddCustomerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/OpenAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/OpenAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CustomersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CustomersPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -62,7 +60,25 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.AddCustomerAndLoginTest.addCustomerWithInValidData">
+  <component name="RunManager" selected="TestNG.AddCustomerAndDeleteTest.addCustomerAndDeleteTest">
+    <configuration name="AddCustomerAndDeleteTest.addCustomerAndDeleteTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="xyzBank53-58-1222-e-qa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.AddCustomerAndDeleteTest" />
+      <option name="METHOD_NAME" value="addCustomerAndDeleteTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddCustomerAndLoginTest.addCustomerAndLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="xyzBank53-58-1222-e-qa.test" />
       <extension name="coverage">
@@ -122,12 +138,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.AddCustomerAndDeleteTest.addCustomerAndDeleteTest" />
       <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerWithInValidData" />
       <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerAndLogin" />
       <item itemvalue="TestNG.FirstSeleniumTest.addCustomerAndLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddCustomerAndDeleteTest.addCustomerAndDeleteTest" />
         <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerWithInValidData" />
         <item itemvalue="TestNG.AddCustomerAndLoginTest.addCustomerAndLogin" />
         <item itemvalue="TestNG.FirstSeleniumTest.addCustomerAndLogin" />
@@ -157,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685521814916</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third commit">
+      <created>1686081792713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686081792713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +199,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
